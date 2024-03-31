@@ -1,0 +1,21 @@
+.conteiner{
+    display: flex;
+}
+
+.listamusicas{
+    color: #000;
+    text-align: left;
+    margin-left: 10px;
+}
+.timeline{
+    width: 75%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.player{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 10px;
+}

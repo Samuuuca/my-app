@@ -18,12 +18,10 @@ export default function ContainerPlayer() {
       try {
         const resolvedJson = await client.getEntries({ content_type: "bibliotecaMusicas" });
 
-        console.log(resolvedJson.items)
-
-        musicdataformatter = resolvedJson.items.map((x) => ({
-          url: "https:" + x.fields.url.fields.file.url,
+        musicdataformatter = resolvedJson.items.map((x) => ({ 
+          url: "https:" + x.fields.url.fields.file.url, 
           title: x.fields.title,
-          tags: x.fields.tags
+          tags: x.fields.tags 
         }));
 
         setMusicas(musicdataformatter);
@@ -46,8 +44,8 @@ export default function ContainerPlayer() {
     <>
       <div className="container">
         <div className="Teste">
-          {carregado ? <Player trackList={musicas}/>: <span className="loader"></span>}
-          {carregado ? <Player trackList={musicas}/>: <span className="loader"></span>}
+          {carregado ? <Player trackList={musicas}/> : <span className="loader"></span>}
+          {carregado ? <Player trackList={musicas}/> : <span className="loader"></span>}
         </div>
       </div>
       <button onClick={handleClick}>Verificar musicas</button>

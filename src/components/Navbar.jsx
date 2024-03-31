@@ -8,8 +8,7 @@ export default function Navbar(){
 
         <nav>
             <Link href={"/"}> <p>Player de Musica </p> </Link>
-
-            <Link href={"/Teste"}> About</Link>
+            <Link href={"/Timeline"}> Timeline Musica</Link>
         </nav>
     )
 
