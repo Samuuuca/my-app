@@ -21,7 +21,7 @@
     "@types/react": "19.2.7",
     "css-loader": "^6.10.0",
     "eslint": "^8",
-    "eslint-config-next": "16.0.8"
+    "eslint-config-next": "14.2.3"
   },
   "overrides": {
     "@types/react": "19.2.7"
